@@ -28,31 +28,30 @@ interface Props {
   url: string;
   code: string;
 }
-
 export const LoginCodeEmail = ({ url, code }: Props) => (
   <Html>
     <Head />
-    <Preview>Your login code for Typebot</Preview>
+    <Preview>Il tuo codice di accesso per Agentix</Preview>
     <Body style={main}>
       <Container style={container}>
         <Logo />
-        <Heading style={heading}>Your login code for Typebot</Heading>
+        <Heading style={heading}>Il tuo codice di accesso per Agentix</Heading>
         <code style={codeStyle}>{code}</code>
         <Text style={paragraph}>
-          This code will only be valid for the next 5 minutes.
+          Questo codice sarà valido solo per i prossimi 5 minuti.
         </Text>
         <Text style={paragraph}>
-          You can also sign in by <Link href={url}>clicking here</Link>.
+          Puoi anche accedere <Link href={url}>cliccando qui</Link>.
         </Text>
         <Hr style={hr} />
-        <Text style={footerText}>Typebot - Build faster, Chat smarter</Text>
+        <Text style={footerText}>Agentix - Costruisci più velocemente, chatta in modo più intelligente</Text>
       </Container>
     </Body>
   </Html>
 );
 
 LoginCodeEmail.PreviewProps = {
-  url: "https://typebot.io",
+  url: "https://agentix.io",
   code: "654778",
 } as Props;
 
@@ -64,6 +63,6 @@ export const sendLoginCodeEmail = async ({
 }: Pick<SendMailOptions, "to"> & ComponentProps<typeof LoginCodeEmail>) =>
   sendEmail({
     to,
-    subject: "Sign in to Typebot",
+    subject: "Accedi ad Agentix",
     html: await render(<LoginCodeEmail {...props} />),
   });

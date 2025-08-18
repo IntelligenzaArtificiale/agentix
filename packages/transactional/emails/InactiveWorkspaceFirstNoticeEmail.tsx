@@ -31,46 +31,49 @@ export const InactiveWorkspaceFirstNoticeEmail = ({
       <Container style={container}>
         <Logo />
         <Text style={paragraph}>
-          It's been at least 60+ days since <strong>{workspaceName}</strong>{" "}
-          workspace has been inactive. Meaning you did not log in or your
-          typebots did not get any traffic in the last 60 days. <br />
+          Sono passati almeno 60+ giorni da quando lo spazio di lavoro{" "}
+          <strong>{workspaceName}</strong>{" "}
+          è stato inattivo. Significa che non hai effettuato l’accesso o che i
+          tuoi typebot non hanno ricevuto traffico negli ultimi 60 giorni. <br />
           <br />
           <strong>
-            We’ve automatically scheduled it for deletion in 30 days.
+            Lo abbiamo automaticamente programmato per l’eliminazione tra 30 giorni.
           </strong>{" "}
-          All its typebots and collected results will be permanently deleted.
+          Tutti i suoi typebot e i risultati raccolti saranno eliminati in modo permanente.
         </Text>
         <Text>
-          You are receiving this email because you are an admin of that
-          workspace.
+          Ricevi questa email perché sei un amministratore di quello
+          spazio di lavoro.
         </Text>
         <Text style={paragraph}>
-          To keep your workspace active, just{" "}
+          Per mantenere attivo il tuo spazio di lavoro, ti basta{" "}
           <Link
             href={`${env.NEXTAUTH_URL}/typebots?workspaceId=${workspaceId}`}
           >
-            log in to your Typebot account
+            accedere al tuo account Typebot
           </Link>{" "}
-          and it will be marked as active again.
+          e verrà nuovamente contrassegnato come attivo.
         </Text>
         <Text style={paragraph}>
-          This can be a good opportunity to re-explore Typebot! A lot of new
-          features have been added since you last logged in including new
-          blocks, more AI integrations and a ton of other improvements.
+          Questa può essere una buona occasione per riscoprire Typebot! Da quando
+          hai effettuato l’ultimo accesso sono state aggiunte molte nuove
+          funzionalità, inclusi nuovi blocchi, più integrazioni con l’IA e molte
+          altre migliorie.
         </Text>
         <Hr style={hr} />
-        <Text style={footerText}>Typebot - Build faster, Chat smarter</Text>
+        <Text style={footerText}>Agentix - Costruisci più velocemente, chatta in modo più intelligente</Text>
         <Link
           href="{{unsubscribe}}"
           target="_blank"
           style={{ ...link, color: "#898989", fontSize: "12px" }}
         >
-          Unsubscribe
+          Annulla iscrizione
         </Link>
       </Container>
     </Body>
   </Html>
 );
+
 
 InactiveWorkspaceFirstNoticeEmail.PreviewProps = {
   workspaceName: "My Workspace",
