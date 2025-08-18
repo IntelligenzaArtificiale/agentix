@@ -90,7 +90,6 @@ ARG BUN_PKG_MANAGER
 ARG SCOPE
 COPY --from=pruned /app/out/full/ .
 RUN SENTRYCLI_SKIP_DOWNLOAD=1 bun install
-RUN bun add -W solid-js@1.7.12
 RUN SKIP_ENV_CHECK=true bunx turbo build --filter="${SCOPE}"
 
 # ================== RELEASE ======================
