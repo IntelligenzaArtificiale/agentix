@@ -45,7 +45,7 @@ const createHtmlFile = () => {
       <AlmostReachedChatsLimitEmail
         usagePercent={86}
         chatsLimit={2000}
-        workspaceName="My Workspace"
+        workspaceName="Workspace"
       />,
     ).html,
   );
