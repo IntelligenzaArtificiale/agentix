@@ -21,6 +21,6 @@ export default defineConfig((options) => [
     banner: {
       js: `// v${version}`,
     },
-    esbuildPlugins: [solidPlugin()],
+  esbuildPlugins: [solidPlugin()],
   },
 ]);
