@@ -151,7 +151,7 @@ export const ChangePlanForm = ({
 
       <Text color="gray.500">
         {t("billing.customLimit.preLink")}{" "}
-        <TextLink href={"https://typebot.io/enterprise-lead-form"} isExternal>
+        <TextLink href={"https://tidycal.com/iaitalia/consulenza-gratis-ia"} isExternal>
           {t("billing.customLimit.link")}
         </TextLink>
       </Text>
