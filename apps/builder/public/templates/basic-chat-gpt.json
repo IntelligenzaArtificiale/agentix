@@ -25,7 +25,7 @@
                 "type": "p",
                 "children": [
                   {
-                    "text": "You need to add your OpenAI credentials to make this bot work. 🪄"
+                    "text": "Devi aggiungere le tue credenziali OpenAI per far funzionare questo bot. 🪄"
                   }
                 ]
               }
@@ -41,10 +41,10 @@
                 "type": "p",
                 "children": [
                   {
-                    "text": "Once it's done, delete this group and connect the "
+                    "text": "Una volta fatto, elimina questo gruppo e collega l’evento "
                   },
                   { "bold": true, "text": "Start" },
-                  { "text": " event with " },
+                  { "text": " con " },
                   { "bold": true, "text": "Intro" },
                   { "text": " 🚀" }
                 ]
@@ -56,7 +56,7 @@
     },
     {
       "id": "qfrz5nwm63g12dajsjxothb5",
-      "title": "User input",
+      "title": "Input utente",
       "graphCoordinates": { "x": 198.64, "y": 179.04 },
       "blocks": [
         {
@@ -78,7 +78,7 @@
     },
     {
       "id": "a6ymhjwtkqwp8t127plz8qmk",
-      "title": "ChatGPT reply",
+      "title": "Risposta ChatGPT",
       "graphCoordinates": { "x": 624.57, "y": 200.09 },
       "blocks": [
         {
@@ -132,7 +132,7 @@
           "type": "text",
           "content": {
             "richText": [
-              { "type": "p", "children": [{ "text": "Hi there 👋" }] }
+              { "type": "p", "children": [{ "text": "Ciao 👋" }] }
             ]
           }
         },
@@ -142,7 +142,7 @@
           "type": "text",
           "content": {
             "richText": [
-              { "type": "p", "children": [{ "text": "How can I help?" }] }
+              { "type": "p", "children": [{ "text": "Come posso aiutarti?" }] }
             ]
           }
         }
