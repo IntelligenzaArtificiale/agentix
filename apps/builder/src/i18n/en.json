@@ -559,7 +559,7 @@
   "theme.sideMenu.global.background.image.select": "Image",
   "theme.sideMenu.global.background.none.select": "None",
   "theme.sideMenu.global.font": "Font",
-  "theme.sideMenu.global.typebotBrand": "Show Typebot brand",
+  "theme.sideMenu.global.typebotBrand": "Show Agentix brand",
   "theme.sideMenu.template": "Templates",
   "theme.sideMenu.template.gallery": "Gallery",
   "theme.sideMenu.template.gallery.avatarPreview.alt": "Avatar preview in theme template card",

@@ -30,17 +30,17 @@ interface Props {
 export const VerificationCodeEmail = ({ code }: Props) => (
   <Html>
     <Head />
-    <Preview>Your verification code for Typebot</Preview>
+    <Preview>Il tuo codice di accesso per Agentix</Preview>
     <Body style={main}>
       <Container style={container}>
         <Logo />
-        <Heading style={heading}>Your verification code for Typebot</Heading>
+        <Heading style={heading}>Il tuo codice di accesso per Agentix</Heading>
         <code style={codeStyle}>{code}</code>
         <Text style={paragraph}>
-          This code will only be valid for the next hour.
+          Questo codice sarà valido solo per la prossima ora.
         </Text>
         <Hr style={hr} />
-        <Text style={footerText}>Typebot - Build faster, Chat smarter</Text>
+        <Text style={footerText}>Agentix - Costruisci più velocemente, converti in modo più intelligente</Text>
       </Container>
     </Body>
   </Html>
@@ -59,6 +59,6 @@ export const sendVerificationCodeEmail = async ({
   ComponentProps<typeof VerificationCodeEmail>) =>
   sendEmail({
     to,
-    subject: "Your verification code for Typebot",
+    subject: "Il tuo codice di accesso per Agentix",
     html: await render(<VerificationCodeEmail {...props} />),
   });

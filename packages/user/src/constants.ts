@@ -1,4 +1,4 @@
-export const defaultGroupTitleGenPrompt = `I have a group of blocks that is part of my "[[typebotName]]" chatbot. Generate a short and concise title for that group. 2 words at most. Most of the time we are collecting a specific data. Be specific. For example: "Collect name", "Menu", "Goodbye". Here is the group content:
+export const defaultGroupTitleGenPrompt = `Ho un gruppo di blocchi che fa parte del mio chatbot "[[typebotName]]". Genera un titolo breve e conciso per quel gruppo. Due parole al massimo. Il più delle volte raccogliamo dati specifici. Sii specifico. Ad esempio: "Raccogli nome", "Menu", "Arrivederci". Ecco il contenuto del gruppo:
 
 [[groupContent]]
 `;

@@ -44,14 +44,14 @@ export const LoginCodeEmail = ({ url, code }: Props) => (
           Puoi anche accedere <Link href={url}>cliccando qui</Link>.
         </Text>
         <Hr style={hr} />
-        <Text style={footerText}>Agentix - Costruisci più velocemente, chatta in modo più intelligente</Text>
+        <Text style={footerText}>Agentix - Costruisci più velocemente, converti in modo più intelligente</Text>
       </Container>
     </Body>
   </Html>
 );
 
 LoginCodeEmail.PreviewProps = {
-  url: "https://agentix.io",
+  url: "agentix.intelligenzaartificialeitalia.net",
   code: "654778",
 } as Props;
 

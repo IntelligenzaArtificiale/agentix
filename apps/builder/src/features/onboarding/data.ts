@@ -26,7 +26,7 @@ export const onboardingVideos: Partial<
   },
   groupTitlesAutoGeneration: {
     key: "groupTitlesAutoGeneration",
-    youtubeId: "Lt7UliKv0xQ",
+    youtubeId: "Lt7UliKv0xQ", // video group management feature
   },
   [IntegrationBlockType.ZAPIER]: {
     key: IntegrationBlockType.ZAPIER,

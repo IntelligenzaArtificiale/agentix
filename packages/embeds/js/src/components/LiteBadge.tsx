@@ -94,7 +94,7 @@ export const LiteBadge = (props: Props) => {
   return (
     <a
       ref={liteBadge}
-      href={"https://typebot.io/?utm_source=litebadge"}
+      href={"https://tidycal.com/iaitalia/consulenza-gratis-ia"}
       target="_blank"
       rel="noopener noreferrer"
       class="lite-badge"
@@ -102,7 +102,7 @@ export const LiteBadge = (props: Props) => {
       style={defaultStyles}
     >
       <TypebotLogo />
-      <span>Made with Typebot</span>
+      <span>Creato con AGENTIX</span>
     </a>
   );
 };

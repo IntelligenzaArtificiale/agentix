@@ -29,14 +29,14 @@ test.describe
         // Branding
         await page.getByRole("button", { name: "Global" }).click();
         await expect(
-          page.locator('a:has-text("Made with Typebot")'),
+          page.locator('a:has-text("Creato con AGENTIX")'),
         ).toHaveAttribute(
           "href",
-          "https://www.typebot.io/?utm_source=litebadge",
+          "https://www.agentix.intelligenzaartificialeitalia.net/?utm_source=litebadge",
         );
-        await page.click('text="Show Typebot brand"');
+        await page.click('text="Show AGENTIX brand"');
         await expect(
-          page.locator('a:has-text("Made with Typebot")'),
+          page.locator('a:has-text("Creato con AGENTIX")'),
         ).toBeHidden();
 
         // Font
@@ -295,7 +295,7 @@ test.describe("Free workspace", () => {
     await expect(
       page.locator('[data-testid="starter-lock-tag"]'),
     ).toBeVisible();
-    await page.click("text=Show Typebot brand");
+    await page.click("text=Show AGENTIX brand");
     await expect(
       page.locator(
         'text="You need to upgrade your plan in order to remove branding"',
